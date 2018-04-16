@@ -24,6 +24,14 @@ namespace planshetService.Models
 
         public DbSet<TodoItem> TodoItems { get; set; }
 
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderState> OrderStates { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserType> UserTypes { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(
