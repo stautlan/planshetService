@@ -8,7 +8,7 @@ namespace planshetService.DataObjects
         public Nullable<int> ProductId { get; set; }
         public Nullable<int> UserId { get; set; }
         public Nullable<int> Amount { get; set; }
-        public Nullable<DateTime> DateTime { get; set; }
+        public DateTime DateTime { get; set; }
 
         public virtual Product Product { get; set; }
         public virtual User User { get; set; }
